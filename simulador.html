@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- llamada a bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="logo/wickedcss.min.css">
+
+    <!--Script de la libreria-->
+    <script src="html2pdf.bundle.min.js"></script>
+    <!--Script que se encarga de crear el PDF usando la libreria-->
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        
+    
+    <title>Simulador Financiero</title>
+</head>
+<body>
+    <div>
+    <img src="logo/descarga.png" class="rounded float-left" alt="...">
+    <img src="logo/descarga.jfif" class="rounded float-right" alt="...">
+    </div>
+
+    <div>
+        <img src="logo/logoooo.png" class="imagen" alt="...">
+    </div>
+    <br>
+    <hr>
+       <!-- Permitirá al usuario ingresar la cantidad de dinero que
+       quieren pedir prestado, la tasa de interés y la cantidad de meses en que quieren pagarlo -->
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-6">
+                    <br>
+                    <h2 class="rollerRight">Simulador de  Amortizacion Francés</h2>
+                    <div class="form-group">
+                        <label for="monto">Monto a solicitar</label>
+                        <input type="text" class="form-control floater" id="monto" placeholder="Ingresar monto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interes">Capturar el interes</label>
+                        <input type="text" class="form-control floater" id="interes" placeholder="Ingresar tasa de interés mensual"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tiempo">Número de Meses</label>
+                        <input type="text" class="form-control floater" id="tiempo" placeholder="Ingresar cantidad de meses"required>
+                    </div>
+                    <button  type="submit" class="btn-button floater " id="btnCalcular">Calcular</button>
+                </div>
+                
+                <div class="col-6 btnparrafo">
+                    <h1 class="pulse">Amortización francés</h1>
+                    <p class="textparrafo pulse">El sistema de amortización francés para créditos establece que el monto de las cuotas mensuales es fijo durante todo el período definido. 
+                        Esto quiere decir que el deudor pagará siempre la misma cantidad</p>
+                        <h4 class="slideUp">Equipo de desarrollo</h4>
+                        <li class="floater">Jose David Torres Garcia</li>
+                        <li class="floater">Juriar Abirzabit  Torrez Jimenez</li>
+                        <li class="floater">Ivan Gomez Alveres</li>
+                        <li class="floater">Adrian Peñate Hernandez</li>   
+                        <li class="floater">Jose Francisco Lujano</li>  
+                </div>
+            </div>
+            </div>
+            
+            <br>
+
+            <button class="btn-button1  floater" id="btnCrearPdf">Descargar PDF</button>
+            <!-- Crear una tabla con las siguientes columnas -->
+          
+            <div class="col-12">
+                <table id="lista-tabla" class="table">      
+                    <thead>
+                        <th colspan="6" align="center">Reporte Financiero</th>
+                        <tr>
+                            <th>N. pago</th>
+							<th>Fecha</th>
+                            <th>Cuota</th>
+                            <th>Capital</th>
+                            <th>Interés</th>
+                            <th>Saldo</th>                            
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+           
+        </div>
+        
+</div>
+<!-- script para exportar a excel -->
+<script>
+    
+</script>
+    
+    <script src="js/finaciero.js"></script>
+    <script src="js/moment.js"></script>
+    
+
+
+    
+<script>
+    swal("Bienvenidos", " Sistema de Amortizacion Francés", "success");
+</script>
+
+    <!-- llamada a bootstrap -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</body>
+</html>

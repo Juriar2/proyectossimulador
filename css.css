@@ -1,0 +1,145 @@
+body{
+  margin: 1px;
+  padding: 1px;
+}
+.btn-button{
+    background-color: #0464f3;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    border: #0464f3;
+}
+.btn-button:hover{
+    background-color: #f02121;
+    color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px 15px;
+    border: #0464f3;
+}
+
+.table{
+    text-align: center;
+    font-size: 1.2em;
+    color: #0464f3;
+    margin-top: 20px;
+    text-align: center;
+
+
+}
+.table th{
+    background-color: #212122;
+    color: white;  
+    
+    
+    
+}
+
+.form-control{
+	border: 2px solid #204ee8 ;
+	border-radius: 0;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 12pt;
+	color: #000000	;
+	border-radius: 15px;
+	text-align: center;
+}
+/*le indico que toodo el texto se centre en input**/
+.form-control:hover{
+	color: #000000	;
+	border: 3px solid #ec1c4e;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	
+}
+/*le indico que todo el texto se centre en input**/
+.form-control:focus{
+	border: 2px solid #204ee8;
+}
+/***estilos para el text dentro de input**/
+.form-control::placeholder{
+	color: #000000;
+	font-size:1em;
+}
+/**para que se ve mas elegenate**/
+.form-control:-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #000000;
+}
+/**para que se ve mas elegenate**/
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: #000000;
+}
+
+.float-left{
+  max-width:150px;
+  margin: 15px;
+ 
+}
+.rounded.float-right{
+  max-width:85px;
+  margin: 15px;
+  border-radius: 50px;
+  margin: -10px;
+  
+}
+.imagen{
+  display: block;
+  margin: 1px auto;
+  max-width:250px;
+  position: relative;
+  border: #000000;
+}
+
+hr{
+  border: 1px solid #000000;
+  
+  margin: -15px;
+}
+
+.row.align-items-start{
+  margin-top: 10px;
+  text-align: right;
+  
+}
+
+.btnparrafo{
+  font-size: 1.2em;
+  color: #19191a;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+h1{
+  font-size: 2em;
+  color:rgb(20, 116, 241);
+  
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+
+.botom{
+
+}
+.btn-button1{
+    background-color: #0464f3;
+    color: white;
+    border-radius: 20px;
+    width: 18%;
+    padding: 10px 15px;
+    border: #0464f3;
+    margin: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.btn-button1:hover{
+   background-color: #f02121;
+    color: white;
+    border-radius: 20px;
+   
+    padding: 10px 15px;
+    border: #0464f3;
+}
